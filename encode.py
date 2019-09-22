@@ -1,10 +1,16 @@
 import cv2
 import numpy as np
+import argparse
+
+ap=argparse.ArgumentParser()
+ap.add_argument("-i","--input",required=True, help="input image file to encode")
+ap.add_argument("-o","--output",required=True, help="output file name")
+args=vars(ap.parse_args())
 ##import AtoB
 def encrypt():
     text=cvtToB()
     a=[]
-    img=cv2.imread('pic.png')
+    img=cv2.imread(args["input"])
     row,col,ch=img.shape
     ##img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
     ##print(img.shape)
@@ -26,7 +32,7 @@ def encrypt():
 
     encoded_img_flat=np.subtract(flat_img,encoded_txt)
     encoded_img=np.reshape(encoded_img_flat,(row,col,ch))
-    cv2.imwrite("encoded.png", encoded_img)
+    cv2.imwrite(args["output"], encoded_img)
     
 def cvtToB():
     text=(input('input your text:\n'))

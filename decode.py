@@ -1,14 +1,20 @@
 import cv2
 import numpy as np
+import argparse
+ap = argparse.ArgumentParser()
+ap.add_argument("-o","--original",required=True, help="original image file")
+ap.add_argument("-e","--encoded",required=True, help="encoded image file")
+
+args=vars(ap.parse_args())
 def decrypt():
     decodedTxt=[]
     a=[]
     b=[]
     length=int(input('enter password:\n'))
 
-    original_img=cv2.imread('pic.png')
+    original_img=cv2.imread(args["original"])
     flat_orig_img=original_img.flatten()
-    img=cv2.imread('encoded.png')
+    img=cv2.imread(args["encoded"])
     flat_img=img.flatten()
 ##    print(flat_orig_img[:50])
 ##    print(flat_img[:50])
