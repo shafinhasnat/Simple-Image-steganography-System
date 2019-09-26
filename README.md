@@ -7,7 +7,7 @@ This project is an steganography tool that can hide a massage inside the pixels 
 Download the repository using the command below-
 
 ```
-git clone https://github.com/shafinhasnat/Image-steganography-OpenCV.git
+git clone https://github.com/shafinhasnat/Simple-Image-steganography-System.git
 ```
 
 ## Usage
