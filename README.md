@@ -1,6 +1,6 @@
 # Image steganography system
 
-This project is an steganography tool that can hide a massage inside the pixels of an image that can be decoded.
+This project is an steganography tool that can hide a massage inside the pixels of an image that can be decoded without losing image quality.
 
 ## Download
 
