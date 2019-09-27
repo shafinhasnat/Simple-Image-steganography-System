@@ -1,6 +1,6 @@
 # Image steganography system
 
-This project is an steganography tool that can hide a massage inside the pixels of an image that can be decoded without losing image quality.
+This project is a steganography tool that can hide or encode a massage inside the pixels of an image that can be decoded without losing image quality.
 
 ## Download
 
@@ -11,7 +11,7 @@ git clone https://github.com/shafinhasnat/Simple-Image-steganography-System.git
 ```
 
 ## Usage
-This is a command line software. It needs a source image to be encoded, and an encoded image name. To encode any message type- 
+This is a command line software. It needs a source image to be encoded, and an encoded image name. To encode any message, type- 
 ```
 python encode.py --input <<input image name>> --output <<encoded image name>>
 ```
