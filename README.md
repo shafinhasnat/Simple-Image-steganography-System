@@ -1,6 +1,6 @@
 # Image steganography system
 
-This project is a steganography tool that can hide or encode a massage inside the pixels of an image that can be decoded without losing image quality.
+This project is a steganography tool that can hide or encode a massage inside the pixels of an image that can be decoded without losing image quality. To have a user experience, visit here: [XELSTEG webapp](https://xelsteg.herokuapp.com)
 
 ## Download
 
